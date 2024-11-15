@@ -20,3 +20,12 @@ positive
 Enter a number: -1.2
 negative
 """
+
+x = int(input("number "))
+
+if x > 0:
+    print("positive")
+elif x < 0:
+    print("negative")
+elif x == 0:
+    print("zero")

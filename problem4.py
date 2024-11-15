@@ -33,3 +33,32 @@ that is an obtuse triangle
 
 
 """
+x = float(input("what is side one? "))
+y = float(input("what is side two? "))
+z = float(input("what is side three? "))
+
+if x > y and x:
+    n = x
+elif y > x and z:
+    n = y
+elif z > x and y:
+    n = z
+else:
+    n = x
+
+if n**2 == x**2 + y**2 + z**2 - n**2:
+    print("this is not an obtuse triangle")
+    print("this is not an acute triangle")
+    print("this is a right triangle")
+elif n**2 > x**2 + y**2 + z**2 - n**2:
+    print("this is not an acute triangle")
+    print("this is not a right triangle")
+    print("this is an obtuse triangle")
+elif n**2 < x**2 + y**2 + z**2 - n**2:
+    print("this is not a right triangle")
+    print("this is not an obtuse triangle")
+    print("this is an acute triangle")
+else:
+    print("this is not an obtuse triangle")
+    print("this is not an acute triangle")
+    print("this is not a right triangle")

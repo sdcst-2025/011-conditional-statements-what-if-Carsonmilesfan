@@ -31,3 +31,14 @@ Enter a number: 10000
 
 
 """
+
+x = int(input("a number "))
+
+if 10 > x > 0:
+    print("0")
+elif 100 > x > 10:
+    print("1")
+elif 1000 > x > 100:
+    print("2")
+elif x > 1000:
+    print("3")

@@ -29,3 +29,21 @@ Enter c: 8
 the equation can not be factored
 
 """
+import math
+a = float(input("enter a "))
+b = float(input("enter b "))
+c = float(input("enter c "))
+n = b**2 - 4 * a * c
+
+if n < 0:
+    print("The equation can not be factored")
+    exit()
+
+Rutlandsucks = math.sqrt(n)
+
+if round(Rutlandsucks, 1) == round(Rutlandsucks, 25):
+    print("the equation can be factored")
+elif round(Rutlandsucks, 1) != round(Rutlandsucks, 25):
+    print("The equation can not be factored")
+else:
+    print("rutland and my code both suck")
